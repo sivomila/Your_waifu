@@ -77,8 +77,6 @@ def get_text_messages(message):
     elif message.text.lower() == 'прощай':
         bot.send_message(message.chat.id, "До встречи.")
         bot.send_sticker(message.chat.id, 'CAACAgEAAxkBAAICTV8Lv9T75Gj2HWBz6N9OX-jGG0UNAAK8AQACf1l6Bz7wIprXdBt0GgQ')
-    elif message.text.lower() == '1':
-        bot.send_message(message.chat.id, "До встречи.")
     else:
         bot.send_message(message.from_user.id, 'Простите, я пока еще этого не знаю. Используйте только мои знания.')
         bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAIBtF8Lr-sqKTQAASzugq5CDgN7uTNZQwACYAADzGguDgr63zDtxpdOGgQ')
